@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form kontak dan saran untuk Lina Widianti">
+    <title>Kontak dan Saran | Lina Widianti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kontak dan Saran</h1>
+        <p>Sampaikan pesan atau saran untuk pengembangan portofolio saya.</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Formulir Kontak</h2>
+
+            <form action="#" method="get">
+                <p>
+                    <label for="nama">Nama lengkap:</label><br>
+                    <input type="text" id="nama" name="nama"
+                           required minlength="3" maxlength="60">
+                </p>
+
+                <p>
+                    <label for="email">Alamat email:</label><br>
+                    <input type="email" id="email" name="email"
+                           required>
+                </p>
+
+                <p>
+                    <label for="telepon">Nomor telepon:</label><br>
+                    <input type="tel" id="telepon" name="telepon"
+                           pattern="[0-9+() -]{8,20}"
+                           title="Masukkan nomor telepon 8 sampai 20 karakter">
+                </p>
+
+                <p>
+                    <label for="tanggal">Tanggal mengirim saran:</label><br>
+                    <input type="date" id="tanggal" name="tanggal"
+                           required>
+                </p>
+
+                <p>
+                    <label for="website">Website atau portofolio:</label><br>
+                    <input type="url" id="website" name="website"
+                           placeholder="https://contoh.com">
+                </p>
+
+                <p>
+                    <label for="nilai">Nilai portofolio (1–10):</label><br>
+                    <input type="number" id="nilai" name="nilai"
+                           min="1" max="10" required>
+                </p>
+
+                <p>
+                    <label for="jenis">Jenis pesan:</label><br>
+                    <select id="jenis" name="jenis" required>
+                        <option value="">Pilih jenis pesan</option>
+                        <option value="saran">Saran</option>
+                        <option value="pertanyaan">Pertanyaan</option>
+                        <option value="apresiasi">Apresiasi</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pesan">Pesan atau saran:</label><br>
+                    <textarea id="pesan" name="pesan"
+                              rows="5" required minlength="10"
+                              maxlength="500"></textarea>
+                </p>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lina Widianti</p>
+        <p><a href="index.html">Kembali ke Beranda</a></p>
+    </footer>
+
+</body>
+</html>
