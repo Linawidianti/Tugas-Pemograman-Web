@@ -17,44 +17,45 @@ Pengujian dilakukan menggunakan [W3C Markup Validation Service](https://validato
 
 ---
 
-## Tugas Mandiri 3 – CSS Modern dan Responsive Design
+
+## Tugas 3 – CSS Modern dan Responsive Design
 
 ### Pengujian Menggunakan Chrome DevTools
 
-Pengujian dilakukan menggunakan Chrome DevTools untuk memastikan tampilan website responsif pada tiga ukuran layar, yaitu mobile, tablet, dan desktop.
+Pengujian dilakukan menggunakan Chrome DevTools untuk memastikan website responsif pada berbagai ukuran layar.
 
-#### 1. Pengujian Mobile
+### 1. Pengujian Mobile
 
 Ukuran layar: **375 × 812 px**
 
 **Halaman Portofolio**
 
-![Mobile Portofolio](<bukti pengujian/mobile portofolio.png>)
+![Mobile Portofolio](<../Tugas 3/bukti pengujian/mobile portofolio.png>)
 
 **Halaman Kontak**
 
-![Mobile Kontak](<bukti pengujian/mobile kontak.png>)
+![Mobile Kontak](<../Tugas 3/bukti pengujian/mobile kontak.png>)
 
-#### 2. Pengujian Tablet
+### 2. Pengujian Tablet
 
 Ukuran layar: **768 × 1024 px**
 
 **Halaman Portofolio**
 
-![Tablet Portofolio](<bukti pengujian/tablet portofolio.png>)
+![Tablet Portofolio](<../Tugas 3/bukti pengujian/tablet portofolio.png>)
 
 **Halaman Kontak**
 
-![Tablet Kontak](<bukti pengujian/tablet kontak.png>)
+![Tablet Kontak](<../Tugas 3/bukti pengujian/tablet kontak.png>)
 
-#### 3. Pengujian Desktop
+### 3. Pengujian Desktop
 
 Ukuran layar: **1200 × 900 px**
 
 **Halaman Portofolio**
 
-![Desktop Portofolio](<bukti pengujian/desktop portofolio.png>)
+![Desktop Portofolio](<../Tugas 3/bukti pengujian/dekstop portofolio.png>)
 
 **Halaman Kontak**
 
-![Desktop Kontak](<bukti pengujian/desktop kontak.png>)
+![Desktop Kontak](<../Tugas 3/bukti pengujian/dekstop kontak.png>)
