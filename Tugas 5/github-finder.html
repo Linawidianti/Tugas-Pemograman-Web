@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+
+    <link rel="stylesheet" href="github-finder.css">
+
+    <script src="github-finder.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>GitHub Profile Finder</h1>
+            <p>
+                Temukan informasi profil pengguna GitHub
+                hanya dengan memasukkan username.
+            </p>
+        </header>
+
+        <form id="searchForm" class="search-form">
+            <input
+                type="text"
+                id="usernameInput"
+                placeholder="Masukkan username GitHub..."
+                required
+            >
+
+            <button type="submit">
+                Cari Profil
+            </button>
+        </form>
+
+        <p id="message" class="message" aria-live="polite"></p>
+
+        <section id="profileResult" class="profile-card" hidden>
+
+            <img
+                id="avatar"
+                src=""
+                alt="Foto profil pengguna GitHub"
+            >
+
+            <h2 id="name"></h2>
+
+            <p id="username" class="username"></p>
+
+            <p id="bio" class="bio"></p>
+
+            <div class="repository">
+                <span>Public Repositories</span>
+                <strong id="repos">0</strong>
+            </div>
+
+            <a
+                id="profileLink"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Lihat Profil GitHub
+            </a>
+
+        </section>
+
+        <footer class="footer">
+            <p>Project Tugas 5 - Pemrograman Web</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
