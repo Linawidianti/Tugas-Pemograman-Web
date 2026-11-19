@@ -1,6 +1,9 @@
 
 <script setup>
 import ProductCard from "../components/ProductCard.vue";
+import { useCartStore } from "../stores/cart";
+
+const cartStore = useCartStore();
 
 // Data produk
 const daftarProduk = [
@@ -26,7 +29,8 @@ const daftarProduk = [
 
 // Fungsi sementara untuk menguji tombol beli
 const beliProduk = (produk) => {
-    alert(produk.nama + " dipilih!");
+    cartStore.addToCart(produk);
+    alert(produk.nama + " berhasil ditambahkan ke keranjang!");
 };
 </script>
 
