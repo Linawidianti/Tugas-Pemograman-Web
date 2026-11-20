@@ -21,17 +21,39 @@ const cartStore = useCartStore();
             >
                 <h3>{{ produk.nama }}</h3>
 
-                <p>Harga: Rp {{ produk.harga.toLocaleString("id-ID") }}</p>
+                <p>
+                    Harga:
+                    Rp {{ produk.harga.toLocaleString("id-ID") }}
+                </p>
 
-                <p>Jumlah: {{ produk.jumlah }}</p>
+                <div class="quantity-control">
+                    <button
+                        class="quantity-button"
+                        @click="cartStore.kurangiJumlah(produk.id)"
+                    >
+                        −
+                    </button>
+
+                    <span>{{ produk.jumlah }}</span>
+
+                    <button
+                        class="quantity-button"
+                        @click="cartStore.tambahJumlah(produk.id)"
+                    >
+                        +
+                    </button>
+                </div>
 
                 <p>
                     Subtotal:
                     Rp {{ (produk.harga * produk.jumlah).toLocaleString("id-ID") }}
                 </p>
 
-                <button @click="cartStore.hapusProduk(produk.id)">
-                    Hapus
+                <button
+                    class="delete-button"
+                    @click="cartStore.hapusProduk(produk.id)"
+                >
+                    Hapus Produk
                 </button>
             </div>
 
@@ -72,11 +94,37 @@ h1 {
 }
 
 .cart-item p {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: #555;
 }
 
-button {
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px0;
+}
+
+.quantity-control span {
+    min-width: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.quantity-button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background: #42b883;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.delete-button {
     padding: 9px 15px;
     border: none;
     border-radius: 6px;
